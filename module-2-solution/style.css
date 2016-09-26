@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu'
+ }
+
+.container {
+  width: 100%;
+}
+
+ h1 {
+   color: red;
+   text-align: center;
+   margin-bottom: 15px;
+ }
+
+.label-1 {
+  background: green;
+  border: 1px solid;
+  padding: 5px;
+  position: relative;
+  float: right;
+}
+
+.label-2 {
+  background: maroon;
+  padding: 5px;
+  position: relative;
+  border: 1px solid;
+  float: right;
+}
+
+.label-3 {
+  background: yellow;
+  padding: 5px;
+  position: relative;
+  border: 1px solid;
+  float: right;
+}
+
+/* Large devices */
+
+@media (min-width: 922px){
+  .col-3 {
+    float: left;
+    border: 1px solid;
+    width: 33.33%;
+    overflow: false;
+  }
+}
+
+/* Tablet devices */
+
+@media (min-width: 768px) and (max-width: 991){
+  .col-3 {
+    float: left;
+    border: 1px solid;
+    margin: 2px;
+    width: 50%;
+    color: red;
+    overflow: false;
+  }
+}
+
+/* Mobile devices */
+
+@media (max-width: 767){
+  .col-1 {
+    float: left;
+    border: 1px solid;
+    width: 100%;
+    overflow: false;
+  }
+}
